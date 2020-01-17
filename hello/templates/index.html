@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Django Tutorial</title>
+</head>
+
+<body>
+    <h1>Hello First Views at Django</h1>
+    <h2>Thinny Django Template</h2>
+    <p>
+        Name: {{ name }} <br />
+        Nick Name: {{ nick_name }} <br />
+        Age: {{ age }} <br />
+        Status:
+        {% if age < 20 %}
+        Younger
+        {% elif age > 20 %}
+        Older
+        {% else %}
+        Nothing
+        {% endif %}
+        <br />
+        Food:
+        {% for f in food %}
+        <span>{{ f }}</span>
+        {% endfor %}
+    </p>
+</body>
+
+</html>
